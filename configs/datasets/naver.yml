@@ -1,0 +1,24 @@
+metric: COCO
+num_classes: 8
+
+TrainDataset:
+  name: COCODataSet
+  image_dir: images/train
+  anno_path: labels_comb/train/coco_annotations.json
+  dataset_dir: dataset/naver/original
+  data_fields: ['image', 'gt_bbox', 'gt_class', 'is_crowd']
+
+EvalDataset:
+  name: COCODataSet
+  image_dir: images/train
+  anno_path: labels_comb/train/coco_annotations.json
+  dataset_dir: dataset/naver/original
+  data_fields: ['image', 'gt_bbox', 'gt_class', 'is_crowd']
+  allow_empty: true
+
+TestDataset:
+  name: ImageFolder
+  image_dir: images/test
+  anno_path: labels_comb/train/coco_annotations.json
+  dataset_dir: dataset/naver/original
+  data_fields: ['image', 'gt_bbox', 'gt_class', 'is_crowd']

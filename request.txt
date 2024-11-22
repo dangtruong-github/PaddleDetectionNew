@@ -1,0 +1,6 @@
+srun -A r00043 -p gpu --gpus 1 --time=3:00:00 --pty bash
+srun -A r00043 -p gpu --gpus 1 --mem-per-gpu=240G  --time=48:00:00 --pty bash
+srun -A r00043 -p gpu --gpus 1 --mem-per-gpu=240G  --time=36:00:00 --pty bash
+srun -A r00043 -p gpu --gpus 1 --mem-per-gpu=240G  --time=24:00:00 --pty bash
+srun -A r00043 -p gpu --gpus 1 --mem-per-gpu=240G  --time=12:00:00 --pty bash
+srun -A r00043 -p gpu --gpus 1 --mem-per-gpu=240G  --time=6:00:00 --pty bash
